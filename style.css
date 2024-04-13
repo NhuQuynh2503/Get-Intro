@@ -72,26 +72,37 @@ body {
 .navbar-container .nav ul.sub-menu{
     position: absolute;
     top: 3rem;
-    background: #fffcfc;
+    background: #f5f3f3;
     list-style: none;
-    width: 15rem;
-    height: 7rem;
+    width: 12rem;
+    height: 5rem;
     display: none;
+    padding: 1rem;
+    margin-left: 4rem;
 }
 .navbar-container .nav li:hover>ul.sub-menu{
     display: block;
 }
 .navbar-container .nav ul.sub-menu a{
-    padding: 0 2rem;
-    color: #575a5d;
+    padding: 0 1rem;
+    color: #666767;
     font-size: 1.5rem;
-    border-bottom: .1rem solid rgb(201, 198, 198);
+    border-bottom: .1rem solid rgba(173, 170, 170, 0.215);
 }
 .navbar-container .nav ul.sub-menu a:hover{
-    color: #a8a9aa;
+    color: rgb(46, 40, 40);
 }
 
-
+/* mui ten so xuong */
+.nav>li.has-child::after{
+    content: "";
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+    top: 0;
+    left: 6rem;
+    right: 0;
+    padding: .6rem 1rem;
+}
 
 
 
@@ -110,10 +121,23 @@ body {
     margin-left: 10rem;
 }
 .user-container .user li{
+    position: relative;
     padding: 2rem 1rem;
     list-style-type: none;
     font-size: 1.2rem;
 }
+.user-container .user li a{
+    color: #666767;
+}
+.user>li.have-child::after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+    top: 2rem;
+    left: 9rem;
+    right: 0;
+    color: #666767;
+}
+
 section{
     width: 100%;
     height: auto;
