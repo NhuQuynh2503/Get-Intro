@@ -20,9 +20,9 @@
                     <li><a href="#">Inbox</a></li>
                     <li><a href="#">Help</a>
                         <ul class="sub-menu">
-                            <li><a href="">noi dung</a></li>
-                            <li><a href="">noi dung</a></li>
-                            <li><a href="">noi dung</a></li>
+                            <li><a href="">noi dung dai</a></li>
+                            <li><a href="">noi dung dai</a></li>
+                            <li><a href="">noi dung dai</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -30,7 +30,11 @@
             <div class="user-container">
                 <img src="./images/hinh.jpg" alt="">
                 <ul class="user">
-                    <li>Hi,NhuQuynh</li>
+                    <li><a href="#">Hi,NhuQuynh</a>
+                        <ul class="down">
+                            
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -39,7 +43,7 @@
                 <div class="top"><img src="./images/4.jpg" alt=""></div>
                 <div class="bottom">
                     <div class="anh_1">
-                        <img src="./images/00001.jpg" alt="">
+                        <img src="./images/0001.jpg" alt="">
                     </div>
                     <div class="anh_2">
                         <img src="./images/0002.jpg" alt="">
@@ -116,9 +120,24 @@
                     </div>
                 </div>
                 
-            </div>
+            </div> 
         </section>
     </div>
+
+
+    <!-- link jquery.CDN -->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sub-menu').parent('li').addClass('has-child')
+        })
+        $(document).ready(function(){
+            $('.down').parent('li').addClass('have-child')
+        })
+        // .ready(function(){ ... }) là một sự kiện trong jQuery 
+        // được kích hoạt khi toàn bộ trang đã sẵn sàng (ready) để tương tác với mã JavaScript.
+        //tim nhung class co ten sub-menu va goi den cha cua no=>li,sau do addCLass has-child vao li
+    </script>
 </body>
 
 </html>
